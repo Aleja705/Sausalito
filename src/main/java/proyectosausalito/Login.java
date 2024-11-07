@@ -39,26 +39,31 @@ public class Login extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel3.setBackground(new java.awt.Color(204, 204, 204));
+        jPanel3.setBackground(new java.awt.Color(243, 243, 243));
+        jPanel3.setForeground(new java.awt.Color(242, 242, 242));
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         ingreso.setBackground(new java.awt.Color(255, 255, 255));
-        ingreso.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(153, 153, 153)));
         ingreso.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel4.setIcon(new javax.swing.ImageIcon("D:\\Iconos proyecto\\icons8-carta-20.png")); // NOI18N
-        ingreso.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 300, -1, -1));
+        ingreso.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 360, -1, -1));
 
         jLabel1.setIcon(new javax.swing.ImageIcon("D:\\Iconos proyecto\\icons8-candado-20.png")); // NOI18N
-        ingreso.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 360, -1, 30));
+        ingreso.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 410, -1, 30));
 
+        Entrar.setBackground(new java.awt.Color(0, 255, 102));
+        Entrar.setForeground(new java.awt.Color(255, 255, 255));
         Entrar.setText("Entrar");
+        Entrar.setToolTipText("");
+        Entrar.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED));
+        Entrar.setBorderPainted(false);
         Entrar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 EntrarActionPerformed(evt);
             }
         });
-        ingreso.add(Entrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 540, 220, 40));
+        ingreso.add(Entrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 540, 220, 40));
 
         Mostrar.setBackground(new java.awt.Color(255, 255, 255));
         Mostrar.setForeground(new java.awt.Color(0, 0, 0));
@@ -68,17 +73,19 @@ public class Login extends javax.swing.JFrame {
                 MostrarActionPerformed(evt);
             }
         });
-        ingreso.add(Mostrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 420, -1, -1));
+        ingreso.add(Mostrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 460, -1, -1));
         ingreso.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 30, -1, -1));
 
-        jLabel3.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel3.setBackground(new java.awt.Color(153, 153, 153));
+        jLabel3.setFont(new java.awt.Font("Microsoft JhengHei", 1, 18)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(102, 102, 102));
         jLabel3.setText("Inicio de sesión");
-        ingreso.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 220, 130, 40));
+        jLabel3.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        ingreso.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 300, 150, 40));
 
         txUsuario.setBackground(new java.awt.Color(255, 255, 255));
         txUsuario.setForeground(new java.awt.Color(0, 0, 0));
-        txUsuario.setBorder(new javax.swing.border.MatteBorder(null));
+        txUsuario.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(219, 219, 219)));
         txUsuario.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
                 txUsuarioMousePressed(evt);
@@ -89,9 +96,10 @@ public class Login extends javax.swing.JFrame {
                 txUsuarioActionPerformed(evt);
             }
         });
-        ingreso.add(txUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 290, 310, 40));
+        ingreso.add(txUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 350, 310, 30));
 
-        TxtPassword.setBackground(new java.awt.Color(153, 153, 153));
+        TxtPassword.setBackground(new java.awt.Color(255, 255, 255));
+        TxtPassword.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(219, 219, 219), 1, true));
         TxtPassword.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
                 TxtPasswordMousePressed(evt);
@@ -102,16 +110,17 @@ public class Login extends javax.swing.JFrame {
                 TxtPasswordActionPerformed(evt);
             }
         });
-        ingreso.add(TxtPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 350, 310, 50));
+        ingreso.add(TxtPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 410, 310, 30));
 
+        jLabel5.setFont(new java.awt.Font("Microsoft Sans Serif", 0, 14)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(58, 179, 28));
         jLabel5.setText("Olvido su contraseña");
-        ingreso.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 490, -1, -1));
+        ingreso.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 500, -1, 30));
 
         jLabel6.setIcon(new javax.swing.ImageIcon("D:\\sau.jpg")); // NOI18N
-        ingreso.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 0, 250, 240));
+        ingreso.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 10, 280, 290));
 
-        jPanel3.add(ingreso, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 0, 410, 680));
+        jPanel3.add(ingreso, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 30, 460, 640));
 
         jButton3.setText("Salir");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -119,23 +128,17 @@ public class Login extends javax.swing.JFrame {
                 jButton3ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 10, -1, -1));
+        jPanel3.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 260, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(71, 71, 71))
+            .addComponent(jPanel3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 1298, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(35, 35, 35))
+            .addComponent(jPanel3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 718, Short.MAX_VALUE)
         );
 
         pack();
