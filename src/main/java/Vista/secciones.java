@@ -1,5 +1,5 @@
 
-package proyectosausalito;
+package Vista;
 
 
 public class secciones extends javax.swing.JFrame {

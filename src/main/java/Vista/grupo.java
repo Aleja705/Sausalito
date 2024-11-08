@@ -1,5 +1,5 @@
 
-package proyectosausalito;
+package Vista;
 
 
 public class grupo extends javax.swing.JFrame {
