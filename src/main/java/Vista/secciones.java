@@ -1,6 +1,7 @@
 
 package Vista;
 
+import com.Vista.secciones.Menu;
 import com.Vista.secciones.Mesas;
 import com.formdev.flatlaf.intellijthemes.materialthemeuilite.FlatMaterialLighterIJTheme;
 import java.awt.BorderLayout;
@@ -15,7 +16,7 @@ public class secciones extends javax.swing.JFrame {
     }
 
     private void iniMesas(){
-        Mesas mesas = new Mesas();
+        Menu mesas = new Menu();
         mesas.setSize(789, 700);
         mesas.setLocation(0,0);
         
