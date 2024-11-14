@@ -117,8 +117,8 @@ public class Login extends javax.swing.JFrame {
         jLabel5.setText("Olvido su contraseña");
         ingreso.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 500, -1, 30));
 
-        jLabel6.setIcon(new javax.swing.ImageIcon("D:\\sau.jpg")); // NOI18N
-        ingreso.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 10, 280, 290));
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Logo-removebg-preview.png"))); // NOI18N
+        ingreso.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 70, 180, 200));
 
         jPanel3.add(ingreso, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 30, 460, 640));
 
@@ -134,7 +134,10 @@ public class Login extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 1298, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, 1286, Short.MAX_VALUE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

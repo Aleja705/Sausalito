@@ -1,11 +1,10 @@
 
 package Vista;
 
-import com.Vista.secciones.Menu;
-import com.Vista.secciones.Mesas;
-import com.Vista.secciones.Mobiliario;
+import com.Vista.secciones.*;
 import com.formdev.flatlaf.intellijthemes.materialthemeuilite.FlatMaterialLighterIJTheme;
 import java.awt.BorderLayout;
+import javax.swing.JPanel;
 
 
 public class secciones extends javax.swing.JFrame {
@@ -17,12 +16,15 @@ public class secciones extends javax.swing.JFrame {
     }
 
     private void iniMesas(){
-        Mobiliario mesas = new Mobiliario();
-        mesas.setSize(789, 700);
-        mesas.setLocation(0,0);
+        inicio(new Mesas());
+    }
+    
+    private void inicio(JPanel in){
+        in.setSize(789, 700);
+        in.setLocation(0,0);
         
         Principal.removeAll();
-        Principal.add(mesas, BorderLayout.CENTER);
+        Principal.add(in, BorderLayout.CENTER);
         Principal.revalidate();
         Principal.repaint();
     }
@@ -260,7 +262,7 @@ public class secciones extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void BotonMesasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonMesasActionPerformed
-        // TODO add your handling code here:
+        inicio(new Mesas());
     }//GEN-LAST:event_BotonMesasActionPerformed
 
     private void BotonGestionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonGestionActionPerformed
@@ -268,23 +270,23 @@ public class secciones extends javax.swing.JFrame {
     }//GEN-LAST:event_BotonGestionActionPerformed
 
     private void BotonVentasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonVentasActionPerformed
-        // TODO add your handling code here:
+        inicio(new Ventas());
     }//GEN-LAST:event_BotonVentasActionPerformed
 
     private void BotonMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonMenuActionPerformed
-        // TODO add your handling code here:
+        inicio(new Menu());
     }//GEN-LAST:event_BotonMenuActionPerformed
 
     private void BotonUsuariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonUsuariosActionPerformed
-        // TODO add your handling code here:
+        inicio(new Usuarios());
     }//GEN-LAST:event_BotonUsuariosActionPerformed
 
     private void BotonMobiliarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonMobiliarioActionPerformed
-        // TODO add your handling code here:
+        inicio(new Mobiliario());
     }//GEN-LAST:event_BotonMobiliarioActionPerformed
 
     private void BotonGastosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonGastosActionPerformed
-        // TODO add your handling code here:
+        inicio(new Gastos());
     }//GEN-LAST:event_BotonGastosActionPerformed
 
     /**
