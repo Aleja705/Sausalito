@@ -44,6 +44,8 @@ public class Mesas extends javax.swing.JPanel {
         jButton23 = new javax.swing.JButton();
         jButton24 = new javax.swing.JButton();
 
+        setPreferredSize(new java.awt.Dimension(789, 700));
+
         jPanel1.setBackground(new java.awt.Color(229, 229, 229));
         jPanel1.setPreferredSize(new java.awt.Dimension(789, 780));
 
