@@ -4,6 +4,7 @@
  */
 package Vista;
 
+import com.formdev.flatlaf.intellijthemes.materialthemeuilite.FlatMaterialLighterIJTheme;
 import java.awt.Color;
 
 /**
@@ -56,8 +57,9 @@ public class Login extends javax.swing.JFrame {
         Entrar.setForeground(new java.awt.Color(255, 255, 255));
         Entrar.setText("Entrar");
         Entrar.setToolTipText("");
-        Entrar.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED));
+        Entrar.setBorder(null);
         Entrar.setBorderPainted(false);
+        Entrar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Entrar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 EntrarActionPerformed(evt);
@@ -117,7 +119,7 @@ public class Login extends javax.swing.JFrame {
         jLabel5.setText("Olvido su contraseña");
         ingreso.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 500, -1, 30));
 
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Logo-removebg-preview.png"))); // NOI18N
+        jLabel6.setIcon(new javax.swing.ImageIcon("C:\\Users\\Lenovo\\Documents\\NetBeansProjects\\ProyectoSausalito\\src\\main\\java\\Imagenes\\sau.jpg")); // NOI18N
         ingreso.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 70, 180, 200));
 
         jPanel3.add(ingreso, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 30, 460, 640));
@@ -134,10 +136,7 @@ public class Login extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, 1286, Short.MAX_VALUE)
-                .addContainerGap())
+            .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, 1298, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -217,6 +216,7 @@ public class Login extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(Login.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
+        FlatMaterialLighterIJTheme.setup();
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
