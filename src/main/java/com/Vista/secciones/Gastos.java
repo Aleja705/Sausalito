@@ -26,35 +26,101 @@ public class Gastos extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
+        Eliminar = new javax.swing.JPanel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        Gastos = new javax.swing.JTable();
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
+        Eliminr = new javax.swing.JButton();
 
-        jPanel1.setBackground(new java.awt.Color(204, 255, 204));
+        Eliminar.setBackground(new java.awt.Color(204, 204, 204));
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 789, Short.MAX_VALUE)
+        Gastos.setBackground(new java.awt.Color(255, 255, 255));
+        Gastos.setForeground(new java.awt.Color(255, 255, 255));
+        Gastos.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {"", null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null}
+            },
+            new String [] {
+                "Codigo", "Nombre", "Precio", "Fecha", "Descripcion"
+            }
+        ));
+        Gastos.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        Gastos.setFocusable(false);
+        Gastos.setGridColor(new java.awt.Color(0, 0, 0));
+        Gastos.setSelectionBackground(new java.awt.Color(255, 255, 255));
+        Gastos.setShowGrid(true);
+        Gastos.setSurrendersFocusOnKeystroke(true);
+        Gastos.setUpdateSelectionOnSort(false);
+        Gastos.setVerifyInputWhenFocusTarget(false);
+        jScrollPane1.setViewportView(Gastos);
+        if (Gastos.getColumnModel().getColumnCount() > 0) {
+            Gastos.getColumnModel().getColumn(0).setHeaderValue("Codigo");
+            Gastos.getColumnModel().getColumn(1).setHeaderValue("Nombre");
+            Gastos.getColumnModel().getColumn(2).setHeaderValue("Precio");
+            Gastos.getColumnModel().getColumn(3).setHeaderValue("Fecha");
+            Gastos.getColumnModel().getColumn(4).setHeaderValue("Descripcion");
+        }
+
+        jButton1.setText("jButton1");
+
+        jButton2.setText("jButton2");
+
+        Eliminr.setText("jButton3");
+
+        javax.swing.GroupLayout EliminarLayout = new javax.swing.GroupLayout(Eliminar);
+        Eliminar.setLayout(EliminarLayout);
+        EliminarLayout.setHorizontalGroup(
+            EliminarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(EliminarLayout.createSequentialGroup()
+                .addGroup(EliminarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(EliminarLayout.createSequentialGroup()
+                        .addGap(35, 35, 35)
+                        .addComponent(jButton1)
+                        .addGap(44, 44, 44)
+                        .addComponent(jButton2)
+                        .addGap(32, 32, 32)
+                        .addComponent(Eliminr))
+                    .addGroup(EliminarLayout.createSequentialGroup()
+                        .addGap(86, 86, 86)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 616, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(87, Short.MAX_VALUE))
         );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 700, Short.MAX_VALUE)
+        EliminarLayout.setVerticalGroup(
+            EliminarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(EliminarLayout.createSequentialGroup()
+                .addGap(49, 49, 49)
+                .addGroup(EliminarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton1)
+                    .addComponent(jButton2)
+                    .addComponent(Eliminr))
+                .addGap(126, 126, 126)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(375, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(Eliminar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(Eliminar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel Eliminar;
+    private javax.swing.JButton Eliminr;
+    private javax.swing.JTable Gastos;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JScrollPane jScrollPane1;
     // End of variables declaration//GEN-END:variables
 }
