@@ -21,7 +21,7 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="jPanel1" alignment="0" pref="846" max="32767" attributes="0"/>
+          <Component id="jPanel1" alignment="0" min="-2" max="-2" attributes="0"/>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
@@ -56,19 +56,19 @@
                           <Component id="jButton4" min="-2" pref="159" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" attributes="0">
-                          <Component id="jButton11" pref="101" max="32767" attributes="0"/>
+                          <Component id="jButton11" pref="93" max="32767" attributes="0"/>
                           <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
-                          <Component id="jButton6" pref="101" max="32767" attributes="0"/>
+                          <Component id="jButton6" pref="93" max="32767" attributes="0"/>
                           <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
-                          <Component id="jButton7" pref="101" max="32767" attributes="0"/>
+                          <Component id="jButton7" pref="93" max="32767" attributes="0"/>
                           <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
-                          <Component id="jButton8" pref="101" max="32767" attributes="0"/>
+                          <Component id="jButton8" pref="93" max="32767" attributes="0"/>
                           <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
-                          <Component id="jButton9" pref="101" max="32767" attributes="0"/>
+                          <Component id="jButton9" pref="93" max="32767" attributes="0"/>
                           <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
-                          <Component id="jButton10" pref="101" max="32767" attributes="0"/>
+                          <Component id="jButton10" pref="93" max="32767" attributes="0"/>
                           <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
-                          <Component id="jButton1" pref="101" max="32767" attributes="0"/>
+                          <Component id="jButton1" pref="92" max="32767" attributes="0"/>
                       </Group>
                       <Group type="102" attributes="0">
                           <Component id="jButton18" max="32767" attributes="0"/>
