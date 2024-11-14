@@ -43,7 +43,7 @@ public class secciones extends javax.swing.JFrame {
         BotonUsuarios = new javax.swing.JButton();
         BotonMobiliario = new javax.swing.JButton();
         BotonGastos = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
+        BotonDespliegue = new javax.swing.JButton();
         Principal = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -168,10 +168,15 @@ public class secciones extends javax.swing.JFrame {
             }
         });
 
-        jButton1.setBackground(new java.awt.Color(58, 179, 28));
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Barra.png"))); // NOI18N
-        jButton1.setBorder(null);
-        jButton1.setBorderPainted(false);
+        BotonDespliegue.setBackground(new java.awt.Color(58, 179, 28));
+        BotonDespliegue.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Barra.png"))); // NOI18N
+        BotonDespliegue.setBorder(null);
+        BotonDespliegue.setBorderPainted(false);
+        BotonDespliegue.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                BotonDespliegueMouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout BarraLayout = new javax.swing.GroupLayout(Barra);
         Barra.setLayout(BarraLayout);
@@ -191,7 +196,7 @@ public class secciones extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(26, 26, 26)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(BotonDespliegue, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(16, Short.MAX_VALUE))
         );
         BarraLayout.setVerticalGroup(
@@ -199,7 +204,7 @@ public class secciones extends javax.swing.JFrame {
             .addGroup(BarraLayout.createSequentialGroup()
                 .addGap(23, 23, 23)
                 .addGroup(BarraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(BotonDespliegue, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 36, Short.MAX_VALUE))
                 .addGap(93, 93, 93)
                 .addComponent(BotonMesas, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -289,6 +294,10 @@ public class secciones extends javax.swing.JFrame {
         inicio(new Gastos());
     }//GEN-LAST:event_BotonGastosActionPerformed
 
+    private void BotonDespliegueMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotonDespliegueMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BotonDespliegueMouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -306,6 +315,7 @@ public class secciones extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel Barra;
+    private javax.swing.JButton BotonDespliegue;
     private javax.swing.JButton BotonGastos;
     private javax.swing.JButton BotonGestion;
     private javax.swing.JButton BotonMenu;
@@ -315,7 +325,6 @@ public class secciones extends javax.swing.JFrame {
     private javax.swing.JButton BotonVentas;
     private javax.swing.JPanel PanelPrincipal;
     private javax.swing.JPanel Principal;
-    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }
