@@ -30,8 +30,6 @@ public class Gastos extends javax.swing.JPanel {
         jScrollPane1 = new javax.swing.JScrollPane();
         Gastos = new javax.swing.JTable();
         jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        Eliminr = new javax.swing.JButton();
 
         Eliminar.setBackground(new java.awt.Color(204, 204, 204));
 
@@ -50,7 +48,7 @@ public class Gastos extends javax.swing.JPanel {
         ));
         Gastos.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         Gastos.setFocusable(false);
-        Gastos.setGridColor(new java.awt.Color(0, 0, 0));
+        Gastos.setGridColor(new java.awt.Color(204, 204, 204));
         Gastos.setSelectionBackground(new java.awt.Color(255, 255, 255));
         Gastos.setShowGrid(true);
         Gastos.setSurrendersFocusOnKeystroke(true);
@@ -65,16 +63,12 @@ public class Gastos extends javax.swing.JPanel {
             Gastos.getColumnModel().getColumn(4).setHeaderValue("Descripcion");
         }
 
-        jButton1.setText("Agregar");
+        jButton1.setText("Nuevo");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
-
-        jButton2.setText("jButton2");
-
-        Eliminr.setText("jButton3");
 
         javax.swing.GroupLayout EliminarLayout = new javax.swing.GroupLayout(Eliminar);
         Eliminar.setLayout(EliminarLayout);
@@ -83,28 +77,21 @@ public class Gastos extends javax.swing.JPanel {
             .addGroup(EliminarLayout.createSequentialGroup()
                 .addGroup(EliminarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(EliminarLayout.createSequentialGroup()
-                        .addGap(35, 35, 35)
-                        .addComponent(jButton1)
-                        .addGap(44, 44, 44)
-                        .addComponent(jButton2)
-                        .addGap(32, 32, 32)
-                        .addComponent(Eliminr))
+                        .addGap(61, 61, 61)
+                        .addComponent(jButton1))
                     .addGroup(EliminarLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 614, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(169, Short.MAX_VALUE))
+                        .addGap(73, 73, 73)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 640, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(76, Short.MAX_VALUE))
         );
         EliminarLayout.setVerticalGroup(
             EliminarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(EliminarLayout.createSequentialGroup()
-                .addGap(49, 49, 49)
-                .addGroup(EliminarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jButton2)
-                    .addComponent(Eliminr))
-                .addGap(182, 182, 182)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 123, Short.MAX_VALUE)
-                .addGap(319, 319, 319))
+                .addGap(63, 63, 63)
+                .addComponent(jButton1)
+                .addGap(101, 101, 101)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(399, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -126,10 +113,8 @@ public class Gastos extends javax.swing.JPanel {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel Eliminar;
-    private javax.swing.JButton Eliminr;
     private javax.swing.JTable Gastos;
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
     private javax.swing.JScrollPane jScrollPane1;
     // End of variables declaration//GEN-END:variables
 }
