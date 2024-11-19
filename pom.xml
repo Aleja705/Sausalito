@@ -27,6 +27,18 @@
             <artifactId>flatlaf-intellij-themes</artifactId>
             <version>3.5.2</version>
         </dependency>
+        <dependency>
+            <groupId>cn.bridgeli</groupId>
+            <artifactId>master-slave-db-selector</artifactId>
+            <version>0.0.2</version>
+            <type>jar</type>
+        </dependency>
+        <dependency>
+            <groupId>org.opendaylight.mdsal.binding.model.ietf</groupId>
+            <artifactId>rfc8342-ietf-origin</artifactId>
+            <version>8.0.16</version>
+            <type>bundle</type>
+        </dependency>
     </dependencies>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
