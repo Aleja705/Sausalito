@@ -35,7 +35,6 @@ public class Login extends javax.swing.JFrame {
         txUsuario = new javax.swing.JTextField();
         TxtPassword = new javax.swing.JPasswordField();
         jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
         jButton3 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -118,9 +117,6 @@ public class Login extends javax.swing.JFrame {
         jLabel5.setForeground(new java.awt.Color(58, 179, 28));
         jLabel5.setText("Olvido su contraseña");
         ingreso.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 500, -1, 30));
-
-        jLabel6.setIcon(new javax.swing.ImageIcon("C:\\Users\\Lenovo\\Documents\\NetBeansProjects\\ProyectoSausalito\\src\\main\\java\\Imagenes\\sau.jpg")); // NOI18N
-        ingreso.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 70, 180, 200));
 
         jPanel3.add(ingreso, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 30, 460, 640));
 
@@ -236,7 +232,6 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JTextField txUsuario;
