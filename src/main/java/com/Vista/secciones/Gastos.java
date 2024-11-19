@@ -4,6 +4,9 @@
  */
 package com.Vista.secciones;
 
+import java.awt.Color;
+import java.awt.Font;
+
 /**
  *
  * @author Sofia Useche
@@ -15,6 +18,10 @@ public class Gastos extends javax.swing.JPanel {
      */
     public Gastos() {
         initComponents();
+        jTable2.getTableHeader().setFont(new Font("Segoe UI",Font.BOLD,14));
+        jTable2.getTableHeader().setOpaque(false);
+        jTable2.getTableHeader().setBackground(new Color(58,179,28));
+        jTable2.getTableHeader().setForeground(Color.white);
     }
 
     /**
@@ -26,95 +33,123 @@ public class Gastos extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        Eliminar = new javax.swing.JPanel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        Gastos = new javax.swing.JTable();
-        jButton1 = new javax.swing.JButton();
+        jPanel1 = new javax.swing.JPanel();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTable2 = new javax.swing.JTable();
+        jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
+        jTextField1 = new javax.swing.JTextField();
+        jButton4 = new javax.swing.JButton();
+        jButton5 = new javax.swing.JButton();
 
-        Eliminar.setBackground(new java.awt.Color(204, 204, 204));
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        Gastos.setBackground(new java.awt.Color(255, 255, 255));
-        Gastos.setForeground(new java.awt.Color(255, 255, 255));
-        Gastos.setModel(new javax.swing.table.DefaultTableModel(
+        jTable2.setBackground(new java.awt.Color(255, 255, 255));
+        jTable2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)));
+        jTable2.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {"", null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null}
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null}
             },
             new String [] {
-                "Codigo", "Nombre", "Precio", "Fecha", "Descripcion"
+                "Documento", "Rol", "Nombre", "Apellido", "Usuario", "Contraseña", "Correo", "Controles"
             }
-        ));
-        Gastos.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        Gastos.setFocusable(false);
-        Gastos.setGridColor(new java.awt.Color(204, 204, 204));
-        Gastos.setSelectionBackground(new java.awt.Color(255, 255, 255));
-        Gastos.setShowGrid(true);
-        Gastos.setSurrendersFocusOnKeystroke(true);
-        Gastos.setUpdateSelectionOnSort(false);
-        Gastos.setVerifyInputWhenFocusTarget(false);
-        jScrollPane1.setViewportView(Gastos);
-        if (Gastos.getColumnModel().getColumnCount() > 0) {
-            Gastos.getColumnModel().getColumn(0).setHeaderValue("Codigo");
-            Gastos.getColumnModel().getColumn(1).setHeaderValue("Nombre");
-            Gastos.getColumnModel().getColumn(2).setHeaderValue("Precio");
-            Gastos.getColumnModel().getColumn(3).setHeaderValue("Fecha");
-            Gastos.getColumnModel().getColumn(4).setHeaderValue("Descripcion");
-        }
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false, false, false, false
+            };
 
-        jButton1.setText("Nuevo");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
             }
         });
+        jTable2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jTable2.setGridColor(new java.awt.Color(204, 204, 204));
+        jTable2.setRowHeight(30);
+        jTable2.setSelectionBackground(new java.awt.Color(255, 255, 255));
+        jScrollPane2.setViewportView(jTable2);
 
-        javax.swing.GroupLayout EliminarLayout = new javax.swing.GroupLayout(Eliminar);
-        Eliminar.setLayout(EliminarLayout);
-        EliminarLayout.setHorizontalGroup(
-            EliminarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(EliminarLayout.createSequentialGroup()
-                .addGroup(EliminarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(EliminarLayout.createSequentialGroup()
-                        .addGap(61, 61, 61)
-                        .addComponent(jButton1))
-                    .addGroup(EliminarLayout.createSequentialGroup()
-                        .addGap(73, 73, 73)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 640, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(76, Short.MAX_VALUE))
-        );
-        EliminarLayout.setVerticalGroup(
-            EliminarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(EliminarLayout.createSequentialGroup()
-                .addGap(63, 63, 63)
-                .addComponent(jButton1)
-                .addGap(101, 101, 101)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(399, Short.MAX_VALUE))
-        );
+        jPanel1.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, 750, 150));
+
+        jButton2.setBackground(new java.awt.Color(58, 179, 28));
+        jButton2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jButton2.setForeground(new java.awt.Color(255, 255, 255));
+        jButton2.setText("Descargar");
+        jButton2.setBorder(null);
+        jButton2.setBorderPainted(false);
+        jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 70, 97, 38));
+
+        jButton3.setBackground(new java.awt.Color(58, 179, 28));
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Buscar.png"))); // NOI18N
+        jButton3.setBorder(null);
+        jButton3.setBorderPainted(false);
+        jButton3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 80, 50, 30));
+
+        jTextField1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(153, 153, 153)));
+        jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 80, 160, 30));
+
+        jButton4.setBackground(new java.awt.Color(58, 179, 28));
+        jButton4.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jButton4.setForeground(new java.awt.Color(255, 255, 255));
+        jButton4.setText("Nuevo");
+        jButton4.setBorder(null);
+        jButton4.setBorderPainted(false);
+        jButton4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 69, 97, 38));
+
+        jButton5.setBackground(new java.awt.Color(58, 179, 28));
+        jButton5.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jButton5.setForeground(new java.awt.Color(255, 255, 255));
+        jButton5.setText("Eliminar");
+        jButton5.setBorder(null);
+        jButton5.setBorderPainted(false);
+        jButton5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 70, 97, 38));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Eliminar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 789, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Eliminar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 700, Short.MAX_VALUE)
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton5ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPanel Eliminar;
-    private javax.swing.JTable Gastos;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JTable jTable2;
+    private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
 }
