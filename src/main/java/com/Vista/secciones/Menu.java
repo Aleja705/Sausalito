@@ -3,7 +3,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
  */
 package com.Vista.secciones;
-
+import Secciones.Menu.*;
+import java.awt.BorderLayout;
+import javax.swing.JPanel;
 /**
  *
  * @author Sofia Useche
@@ -15,6 +17,19 @@ public class Menu extends javax.swing.JPanel {
      */
     public Menu() {
         initComponents();
+        iniCarnes();
+    }
+    private void iniCarnes(){
+        inicio(new Carnes());
+    }
+    private void inicio(JPanel in){
+        in.setSize(789, 626);
+        in.setLocation(0,0);
+        
+        Seccion.removeAll();
+        Seccion.add(in, BorderLayout.CENTER);
+        Seccion.revalidate();
+        Seccion.repaint();
     }
 
     /**
@@ -27,18 +42,141 @@ public class Menu extends javax.swing.JPanel {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
+        BotonCarnes = new javax.swing.JButton();
+        BotonDelchef = new javax.swing.JButton();
+        BotonEjecutivo = new javax.swing.JButton();
+        BotonSopas = new javax.swing.JButton();
+        BotonPescados = new javax.swing.JButton();
+        BotonBebidas = new javax.swing.JButton();
+        BotonAdicionales = new javax.swing.JButton();
+        Seccion = new javax.swing.JPanel();
 
-        jPanel1.setBackground(new java.awt.Color(255, 204, 102));
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+
+        BotonCarnes.setBackground(new java.awt.Color(58, 179, 28));
+        BotonCarnes.setForeground(new java.awt.Color(255, 255, 255));
+        BotonCarnes.setText("Carnes");
+        BotonCarnes.setBorder(null);
+        BotonCarnes.setBorderPainted(false);
+        BotonCarnes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BotonCarnesActionPerformed(evt);
+            }
+        });
+
+        BotonDelchef.setBackground(new java.awt.Color(58, 179, 28));
+        BotonDelchef.setForeground(new java.awt.Color(255, 255, 255));
+        BotonDelchef.setText("Del Chef");
+        BotonDelchef.setBorder(null);
+        BotonDelchef.setBorderPainted(false);
+        BotonDelchef.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BotonDelchefActionPerformed(evt);
+            }
+        });
+
+        BotonEjecutivo.setBackground(new java.awt.Color(58, 179, 28));
+        BotonEjecutivo.setForeground(new java.awt.Color(255, 255, 255));
+        BotonEjecutivo.setText("Ejecutivo");
+        BotonEjecutivo.setBorder(null);
+        BotonEjecutivo.setBorderPainted(false);
+        BotonEjecutivo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BotonEjecutivoActionPerformed(evt);
+            }
+        });
+
+        BotonSopas.setBackground(new java.awt.Color(58, 179, 28));
+        BotonSopas.setForeground(new java.awt.Color(255, 255, 255));
+        BotonSopas.setText("Sopas");
+        BotonSopas.setBorder(null);
+        BotonSopas.setBorderPainted(false);
+        BotonSopas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BotonSopasActionPerformed(evt);
+            }
+        });
+
+        BotonPescados.setBackground(new java.awt.Color(58, 179, 28));
+        BotonPescados.setForeground(new java.awt.Color(255, 255, 255));
+        BotonPescados.setText("Pescados");
+        BotonPescados.setBorder(null);
+        BotonPescados.setBorderPainted(false);
+        BotonPescados.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BotonPescadosActionPerformed(evt);
+            }
+        });
+
+        BotonBebidas.setBackground(new java.awt.Color(58, 179, 28));
+        BotonBebidas.setForeground(new java.awt.Color(255, 255, 255));
+        BotonBebidas.setText("Bebidas");
+        BotonBebidas.setBorder(null);
+        BotonBebidas.setBorderPainted(false);
+        BotonBebidas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BotonBebidasActionPerformed(evt);
+            }
+        });
+
+        BotonAdicionales.setBackground(new java.awt.Color(58, 179, 28));
+        BotonAdicionales.setForeground(new java.awt.Color(255, 255, 255));
+        BotonAdicionales.setText("Adicionales");
+        BotonAdicionales.setBorder(null);
+        BotonAdicionales.setBorderPainted(false);
+        BotonAdicionales.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BotonAdicionalesActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout SeccionLayout = new javax.swing.GroupLayout(Seccion);
+        Seccion.setLayout(SeccionLayout);
+        SeccionLayout.setHorizontalGroup(
+            SeccionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+        SeccionLayout.setVerticalGroup(
+            SeccionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 626, Short.MAX_VALUE)
+        );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 789, Short.MAX_VALUE)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(48, 48, 48)
+                .addComponent(BotonCarnes, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(BotonDelchef, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(BotonEjecutivo, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(BotonSopas, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(BotonPescados, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(BotonBebidas, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(BotonAdicionales, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(91, Short.MAX_VALUE))
+            .addComponent(Seccion, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 700, Short.MAX_VALUE)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(35, 35, 35)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(BotonCarnes, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(BotonDelchef, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(BotonEjecutivo, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(BotonSopas, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(BotonPescados, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(BotonBebidas, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(BotonAdicionales, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(Seccion, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -53,8 +191,44 @@ public class Menu extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
+    private void BotonCarnesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonCarnesActionPerformed
+        inicio(new Carnes());
+    }//GEN-LAST:event_BotonCarnesActionPerformed
+
+    private void BotonEjecutivoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonEjecutivoActionPerformed
+        inicio(new Ejecutivo());
+    }//GEN-LAST:event_BotonEjecutivoActionPerformed
+
+    private void BotonSopasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonSopasActionPerformed
+        inicio(new Sopas());
+    }//GEN-LAST:event_BotonSopasActionPerformed
+
+    private void BotonPescadosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonPescadosActionPerformed
+        inicio(new Pescados());
+    }//GEN-LAST:event_BotonPescadosActionPerformed
+
+    private void BotonBebidasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonBebidasActionPerformed
+        inicio(new Bebidas());
+    }//GEN-LAST:event_BotonBebidasActionPerformed
+
+    private void BotonAdicionalesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonAdicionalesActionPerformed
+        inicio(new Adicionales());
+    }//GEN-LAST:event_BotonAdicionalesActionPerformed
+
+    private void BotonDelchefActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonDelchefActionPerformed
+        inicio(new Delchef());
+    }//GEN-LAST:event_BotonDelchefActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton BotonAdicionales;
+    private javax.swing.JButton BotonBebidas;
+    private javax.swing.JButton BotonCarnes;
+    private javax.swing.JButton BotonDelchef;
+    private javax.swing.JButton BotonEjecutivo;
+    private javax.swing.JButton BotonPescados;
+    private javax.swing.JButton BotonSopas;
+    private javax.swing.JPanel Seccion;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }
